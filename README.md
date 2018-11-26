@@ -1,17 +1,17 @@
-# gz-vue-skeleton
+# cu-vue-skeleton
 
-gz骨架屏前端运行时插件
+cu骨架屏前端运行时插件
 
 ## 使用依赖
-依赖gz-vue-skeleton-dev-plugin处理生成骨架屏后的项目
+依赖cu-vue-skeleton-dev-plugin处理生成骨架屏后的项目
 
 ## 安装
-`npm i gz-vue-skeleton -S`
+`npm i cu-vue-skeleton -S`
 
 ## 使用
 - 为vue-router添加特性，页面切换时显示骨架过渡
   ```js
-  import { skeletonRouter } from 'gz-vue-skeleton'
+  import { skeletonRouter } from 'cu-vue-skeleton'
 
   skeletonRouter(router, mainId)
   ```
@@ -20,7 +20,7 @@ gz骨架屏前端运行时插件
   
 - 注入loading方法
   ```js
-  import { SkeletonPlugin } from 'gz-vue-skeleton'
+  import { SkeletonPlugin } from 'cu-vue-skeleton'
   Vue.use(SkeletonPlugin, {
     mainId: 'app',
   })
