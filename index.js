@@ -3,14 +3,18 @@
 function skeletonRouter(router, mainId) {
   router.beforeEach(function (to, from, next) {
       var id = 'skeleton_' + to.path.replace(/\//g, '_')
-      document.getElementById(mainId).style.display = 'none'
-      document.getElementById(id).style.display = 'block'
+      var mainEle = document.getElementById(mainId)
+      if (mainEle) mainEle.style.display = 'none'
+      var ldEle = document.getElementById(id)
+      if (ldEle) ldEle.style.display = 'block'
       next()
   })
   router.afterEach(function (to, from) {
       var id = 'skeleton_' + to.path.replace(/\//g, '_')
-      document.getElementById(mainId).style.display = 'block'
-      document.getElementById(id).style.display = 'none'
+      var mainEle = document.getElementById(mainId)
+      if (mainEle) mainEle.style.display = 'block'
+      var ldEle = document.getElementById(id)
+      if (ldEle) ldEle.style.display = 'none'
   })
 }
 
@@ -26,8 +30,10 @@ SkeletonPlugin.install = function (Vue, options) {
       if (path) {
           path = path.replace('#', '')
           var id = 'skeleton_' + path.replace(/\//g, '_')
-          document.getElementById(mainId).style.display = 'none'
-          document.getElementById(id).style.display = 'block'
+          var mainEle = document.getElementById(mainId)
+          if (mainEle) mainEle.style.display = 'none'
+          var ldEle = document.getElementById(id)
+          if (ldEle) ldEle.style.display = 'block'
       }
   }
   Vue.hideSkeletonLoading = Vue.prototype.$hideSkeletonLoading = function () {
@@ -35,8 +41,10 @@ SkeletonPlugin.install = function (Vue, options) {
       if (path) {
           path = path.replace('#', '')
           var id = 'skeleton_' + path.replace(/\//g, '_')
-          document.getElementById(mainId).style.display = 'block'
-          document.getElementById(id).style.display = 'none'
+          var mainEle = document.getElementById(mainId)
+          if (mainEle) mainEle.style.display = 'block'
+          var ldEle = document.getElementById(id)
+          if (ldEle) ldEle.style.display = 'none'
       }
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "cu-vue-skeleton",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "cu骨架屏前端运行时插件",
   "main": "index.js",
   "scripts": {
