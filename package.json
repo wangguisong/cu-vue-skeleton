@@ -1,0 +1,19 @@
+{
+  "name": "cu-vue-skeleton",
+  "version": "1.0.0",
+  "description": "cu骨架屏前端运行时插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangguisong/gz-vue-skeleton.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangguisong/gz-vue-skeleton/issues"
+  },
+  "homepage": "https://github.com/wangguisong/gz-vue-skeleton#readme"
+}
